@@ -1,21 +1,15 @@
 {
-    "reporterOptions": {
-      "reportFormat": "json",
-      "fileName": "aggregatedReportForRun.json",
-      "outputDir": "./evincedReports",
-      "tmpDir": "./evincedReports/tmp"
-    },
     "uploadToPlatformOptions": {
-      "enableUploadToPlatform": true,
-      "setUploadToPlatformDefault": false
+        "enableUploadToPlatform": true,
+        "setUploadToPlatformDefault": false
     },
     "skipValidations": [
-      {
-        "selector": "*",
-        "urlRegex": ".*demo.evinced.com\/",
-        "validationTypes": [
-          "NOT_FOCUSABLE"
-        ]
-      }
+        {
+            "selector": "*",
+            "urlRegex": ".*demo.evinced.com\/",
+            "validationTypes": [
+                "COMPOSITE_NOT_IN_FOCUS_SEQUENCE"
+            ]
+        }
     ]
-  }
+}
