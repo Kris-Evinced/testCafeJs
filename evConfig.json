@@ -1,0 +1,21 @@
+{
+    "reporterOptions": {
+      "reportFormat": "json",
+      "fileName": "aggregatedReportForRun.json",
+      "outputDir": "./evincedReports",
+      "tmpDir": "./evincedReports/tmp"
+    },
+    "uploadToPlatformOptions": {
+      "enableUploadToPlatform": true,
+      "setUploadToPlatformDefault": false
+    },
+    "skipValidations": [
+      {
+        "selector": "*",
+        "urlRegex": ".*demo.evinced.com\/",
+        "validationTypes": [
+          "NOT_FOCUSABLE"
+        ]
+      }
+    ]
+  }
