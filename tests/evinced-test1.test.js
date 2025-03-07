@@ -19,7 +19,10 @@ fixture`Evinced Demo site tests`.page`https://demo.evinced.com/`
         await evinced.evStart();
     })
     .afterEach(async (t) => {
-        const issues = await evinced.evStop();
+        const issues = await evinced.evAnalyze()
+        console.log("evSafeFile")
+        await evinced.evSaveFile(issues, 'html', './evReports/evincedTest.html');
+
     });
 
 test("Demo page. Single page analyze", async (t) => {

@@ -1,0 +1,15 @@
+{
+    "uploadToPlatformOptions": {
+        "enableUploadToPlatform": true,
+        "setUploadToPlatformDefault": false
+    },
+    "skipValidations": [
+        {
+            "selector": "*",
+            "urlRegex": ".*demo.evinced.com\/",
+            "validationTypes": [
+                "COMPOSITE_NOT_IN_FOCUS_SEQUENCE"
+            ]
+        }
+    ]
+}
