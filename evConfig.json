@@ -3,6 +3,7 @@
         "enableUploadToPlatform": true,
         "setUploadToPlatformDefault": false
     },
+    "enableScreenshots": true,
     "skipValidations": [
         {
             "selector": "*",
