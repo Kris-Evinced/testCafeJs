@@ -11,5 +11,17 @@
                 "COMPOSITE_NOT_IN_FOCUS_SEQUENCE"
             ]
         }
-    ]
+    ],
+    "logging": {
+        "LOGGING_LEVEL": "info",
+        "ADD_LOGGING_CONTEXT": true
+    },
+    "sdkLogging": {
+        "enable": true, 
+        "level": "debug", 
+        "directory": "./logs", 
+        "browserLoggingEnabled": true, 
+        "systemInformationLoggingEnabled": true, 
+        "maxLogLength": 1000 
+    }
 }
